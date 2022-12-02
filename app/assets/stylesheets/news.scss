@@ -9,31 +9,39 @@
 
 body{
   margin: 33px;
-  backgrond-color: #99FF66;
+  // background-color: #99FF66;
 }
 
 h1{
   font-size: 26px;
-  backgrond-color: #00FFFF;
+  // background-color: #00FFFF;
 }
 
-.table{
-  backgrond-color: #99FF00;
+table{
+  // background-color: #99FF00;
+}
+
+th{
+  text-align: center;
+  padding: 1px 1px 5px;
 }
 
 h2{
-  backgrond-color: #FF66CC;
+  // background-color: #FF66CC;
 }
 
 .form{
-  backgrond-color: #00CC00;
+  // background-color: #00CC00;
+  font-size: 13px;
 }
 .field{
   margin: 0px 0px 10px;
-  backgrond-color: #3366CC;
+  // background-color: #3366CC;
+  font-size: 13px;
 }
 
 .actions{
   margin: 0px 0px 10px;
-  backgrond-color: #9900CC;
+  // background-color: #9900CC;
+  font-size: 13px;
 }

@@ -1,47 +1,4 @@
 // Place all the styles related to the news controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body{
-  margin: 33px;
-  // background-color: #99FF66;
-}
-
-h1{
-  font-size: 26px;
-  // background-color: #00FFFF;
-}
-
-table{
-  // background-color: #99FF00;
-}
-
-th{
-  text-align: center;
-  padding: 1px 1px 5px;
-}
-
-h2{
-  // background-color: #FF66CC;
-}
-
-.form{
-  // background-color: #00CC00;
-  font-size: 13px;
-}
-.field{
-  margin: 0px 0px 10px;
-  // background-color: #3366CC;
-  font-size: 13px;
-}
-
-.actions{
-  margin: 0px 0px 10px;
-  // background-color: #9900CC;
-  font-size: 13px;
-}

@@ -26,6 +26,12 @@ th{
   padding: 1px 1px 5px;
 }
 
+td{
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 h2{
   // background-color: #FF66CC;
 }
@@ -38,6 +44,11 @@ h2{
   margin: 0px 0px 10px;
   // background-color: #3366CC;
   font-size: 13px;
+}
+
+.field p{
+  font-size: 13px;
+  margin: 0px;
 }
 
 .actions{

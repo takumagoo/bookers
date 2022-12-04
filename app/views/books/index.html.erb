@@ -39,12 +39,12 @@
   <div class="form">
     <%= form_with model: @book do |f| %>
       <div class="field">
-
-        <!--後でlabelに変更-->
-
-        <p>title</p>
+        <p>Title</p>
         <%= f.text_field :title %>
-        <p>body</p>
+      </div>
+
+      <div class="field">
+        <p>Body</p>
          <%= f.text_area :body %>
       </div>
       <div class="actions">

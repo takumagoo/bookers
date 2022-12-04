@@ -1,2 +1,19 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<!--<h1>Books#show</h1>-->
+<!--<p>Find me in app/views/books/show.html.erb</p>-->
+<body>
+
+  <p class="show_title">
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+  <p class="show_body">
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
+   <!--<#% @books.each do |book| %>-->
+    <%= link_to "edit", edit_book_path(@book.id) %>
+    <!--<a href="/books/edit">Edit</a>-->
+    "|"
+    <a href="/books">Back</a>
+  <!--<#% end %>-->
+</body>

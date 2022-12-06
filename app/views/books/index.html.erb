@@ -39,22 +39,59 @@
   </table>
 
   <h2>New book</h2>
-  <div class="form">
-    <%= form_with model: @book do |f| %>
-      <div class="field">
-        <p>Title</p>
-        <%= f.text_field :title %>
-      </div>
+  <% if @book.errors.any? %>
 
-      <div class="field">
+    <div class="error_messege">
+      <h2>2 errors prohibited this book from being saved:</h2>
+
+      <ul>
+        <% @book.errors.full_messages.each do |message| %>
+
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+
+    </div>
+    <div class="error_form">
+      <%= form_with model: @book do |f| %>
+        <p>Title</p>
+        <div class="error_field">
+
+          <%= f.text_field :title %>
+        </div>
+
         <p>Body</p>
-         <%= f.text_area :body %>
-      </div>
-      <div class="actions">
-        <!--後でlabelに変更-->
-         <%= f.submit 'Create Book' %>
-        <!--<p>CerateBook</p>-->
-      </div>
-    <% end %>
-  </div>
+        <div class="error_field">
+
+           <%= f.text_area :body %>
+        </div>
+        <div class="actions">
+          <!--後でlabelに変更-->
+           <%= f.submit 'Create Book' %>
+          <!--<p>CerateBook</p>-->
+        </div>
+      <% end %>
+    </div>
+
+  <% else %>
+
+    <div class="form">
+      <%= form_with model: @book do |f| %>
+        <div class="field">
+          <p>Title</p>
+          <%= f.text_field :title %>
+        </div>
+
+        <div class="field">
+          <p>Body</p>
+           <%= f.text_area :body %>
+        </div>
+        <div class="actions">
+          <!--後でlabelに変更-->
+           <%= f.submit 'Create Book' %>
+          <!--<p>CerateBook</p>-->
+        </div>
+      <% end %>
+    </div>
+   <% end %>
 </body>

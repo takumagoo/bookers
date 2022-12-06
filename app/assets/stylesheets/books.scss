@@ -65,3 +65,55 @@ h2{
 .show_body{
   margin: 33px;
 }
+
+// エラーメッセージ
+.error_messege{
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.error_messege h2{
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+
+}
+.error_messege ul{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+  // display: block;
+  // list-style-type: disc;
+  // margin-block-start: 1em;
+  // margin-block-end: 1em;
+  // margin-inline-start: 0px;
+  // margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.error_messege li{
+  font-size: 12px;
+  list-style: square;
+}
+.error_field{
+  margin: 0px 0px 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+.error_form p{
+  font-size: 13px;
+  margin: 0px;
+  width: fit-content;
+  background-color: red;
+}
+
